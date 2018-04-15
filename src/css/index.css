@@ -9,6 +9,7 @@ body{
     background: white;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 html,body{
     font-size: 13px;
@@ -22,11 +23,28 @@ html,body{
     width: 100%;
     min-width: auto;
     height: 50px;
+}
+.container{
+    color: black;
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 50px auto 0;
+    text-align: left;
+}
+.bottom-bar{
+    background-color: black;
+    color: grey;
+}
+.top-bar,.container.bottom-bar{
+    font: inherit;
+    box-sizing: inherit;
     display: block;
 }
-html,body,.top-bar{
+html,body,.top-bar,.bottom-bar{
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit;
 }
+
